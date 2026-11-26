@@ -37,7 +37,8 @@ df_clean ["ICD10"] = ("C50.9"
 
 
 #df_clean.to_csv('df_clean.csv', index=False)
-X = pd.read_csv('df_clean.csv')
+#X = pd.read_csv('df_clean.csv')
+X = df_clean
 
 #Creating the y table for mortality
 y_mortality = X[["Overall Survival Status","Overall Survival (Months)", "Patient's Vital Status"]]
